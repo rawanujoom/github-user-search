@@ -1,0 +1,8 @@
+app-search {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 15px;
+	padding: 10px;
+	font-weight: 300;
+}

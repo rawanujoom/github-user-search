@@ -1,0 +1,42 @@
+<section>
+    <form 
+        (ngSubmit)="onSubmit()"
+        class="form">
+        <mat-form-field
+            class="full-width">
+            <mat-label>Search Github Users</mat-label>
+            <input 
+                matInput
+                [formControl]="userFormControl"
+                [errorStateMatcher]="matcher">
+            <mat-error
+                *ngIf="userFormControl.hasError('required')">
+                Search Keyword is <strong>required</strong>
+            </mat-error>
+        </mat-form-field>
+        <div
+            class="search-button">
+            <button
+                [disabled]="isDisabledSearch()"
+                mat-raised-button
+                color="primary">Go</button>
+        </div>
+    </form>
+    <div 
+        *ngIf="userList.length > 0">
+        <mat-paginator 
+            pageSize="10"
+            [hidePageSize]="true"
+            [length]="userCount"
+            (page)="handlePageEvent($event)">
+        </mat-paginator>
+        <div 
+            class="results">
+            <app-result-card 
+                class="child"
+                *ngFor="let user of userList"
+                [user]="user"></app-result-card>
+        </div>
+    </div>
+</section>
+  

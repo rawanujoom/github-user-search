@@ -1,0 +1,30 @@
+.form {
+  min-width: 300px;
+  max-width: 500px;
+  width: 100%;
+}
+.full-width {
+  width: 100%;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.search-button {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10%;
+}  
+.child {
+  flex: 1 0 21%; 
+  margin: 5px;
+  background-color: blue;
+}
