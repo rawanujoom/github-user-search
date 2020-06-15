@@ -1,0 +1,10 @@
+/client/src/environments/*
+/node_modules/*
+/client/dist/*
+/client/node_modules/*
+/client/*
+**/*.min.js
+**/vendor/*
+**/coverage/*
+**/build/*
+**/docs/*
