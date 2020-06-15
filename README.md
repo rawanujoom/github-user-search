@@ -9,10 +9,11 @@ I have Chose not to add Cache so results are updated from the github API in case
 You can add your github token in your .env file, this token can be generated from `https://github.com/settings/tokens`
 
 Some of the Libraries and tools
-ExpressJS
-Jest
-Morgan
-Angular
-Angular Material
-Superagent
-Supertest
+* ExpressJS
+* Jest
+* Morgan
+* Angular
+* Angular Material
+* Superagent
+* Supertest
+
